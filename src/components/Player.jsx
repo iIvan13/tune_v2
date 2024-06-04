@@ -86,11 +86,11 @@ export default function Player() {
                             className="bg-cover bg-center bg-no-repeat flex w-full justify-between items-start"
                         >
                             <button
-                                className="text-3xl font-medium grid place-content-center text-blue-50/75 ml-2 pt-3 transition duration-300 rounded-full"
+                                className="text-3xl font-medium grid place-content-center text-blue-50 ml-4 pt-3 transition duration-300 rounded-full"
                                 onClick={() => setDrop(!drop)}>
                                 <i className="ri-arrow-left-s-line"></i>
                             </button>
-                            <div className="text-3xl font-medium grid place-content-center text-blue-50/75 mr-3 pt-3 transition duration-300 rounded-full">
+                            <div className="text-3xl font-medium grid place-content-center text-blue-50 mr-5 pt-3 transition duration-300 rounded-full">
                                 <i className="ri-more-line"></i>
                             </div>
                         </div>
