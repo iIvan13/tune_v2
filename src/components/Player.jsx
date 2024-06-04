@@ -55,8 +55,9 @@ export default function Player() {
     return (
         <footer className={`
             flex gap-4 fixed bottom-0 w-full md:px-10 bg-[#FFFFFF] shadow-2xl shadow-blue-950
-            ${drop ? 'h-screen flex-col justify-between p-0' : 'justify-around p-4'}
-        `}>
+            ${drop ? 'flex-col justify-between p-0' : 'justify-around p-4'}`}
+            style={drop ? { height: "calc(100% - env(safe-area-inset-bottom)" } : {}}
+        >
             {
                 !drop ? (
                     <div className="flex items-center gap-2 w-[250px]">
