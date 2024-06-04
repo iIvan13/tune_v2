@@ -78,14 +78,21 @@ export default function Player() {
                 ) : (
                     <article className="w-full h-full">
                         <div
-                            style={{ backgroundImage: `url(${songBg})`, clipPath: "ellipse(110% 100% at 50% 0%)", height: "75%" }}
-                            className="bg-cover bg-center bg-no-repeat"
+                            style={{
+                                backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, .8) 0%, rgba(20, 31, 42, 0.1) 50%, rgba(20, 31, 42, 0) 100%), url(${songBg})`,
+                                clipPath: "ellipse(110% 100% at 50% 0%)",
+                                height: "75%",
+                            }}
+                            className="bg-cover bg-center bg-no-repeat flex w-full justify-between items-start"
                         >
                             <button
-                                className="text-3xl font-medium grid place-content-center text-gray-400 pt-3 transition duration-300 rounded-full"
+                                className="text-3xl font-medium grid place-content-center text-blue-50/75 ml-2 pt-3 transition duration-300 rounded-full"
                                 onClick={() => setDrop(!drop)}>
                                 <i className="ri-arrow-left-s-line"></i>
                             </button>
+                            <div className="text-3xl font-medium grid place-content-center text-blue-50/75 mr-3 pt-3 transition duration-300 rounded-full">
+                                <i className="ri-more-line"></i>
+                            </div>
                         </div>
 
 
@@ -93,7 +100,7 @@ export default function Player() {
                             <div className="text-3xl absolute left-4 -top-8">
                                 <i className="ri-shuffle-line"></i>
                             </div>
-                            <div className="w-full text-center">
+                            <div className="w-full text-center px-4">
                                 <h3 className="text-2xl font-semibold truncate ... overflow-hidden">
                                     {songTitle}
                                 </h3>
