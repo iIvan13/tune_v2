@@ -54,8 +54,8 @@ export default function Player() {
 
     return (
         <footer className={`
-            flex gap-4 fixed bottom-0 w-full p-4 md:px-10 bg-[#FFFFFF] shadow-2xl shadow-blue-950
-            ${drop ? 'h-screen flex-col justify-between p-0 ' : 'justify-around'}
+            flex gap-4 fixed bottom-0 w-full md:px-10 bg-[#FFFFFF] shadow-2xl shadow-blue-950
+            ${drop ? 'h-screen flex-col justify-between p-0' : 'justify-around p-4'}
         `}>
             {
                 !drop ? (
@@ -88,7 +88,7 @@ export default function Player() {
                         </div>
 
 
-                        <div className="w-full flex justify-center items-center mt-5 relative px-5">
+                        <div className="w-full flex justify-center items-center mt-5 relative">
                             <div className="text-3xl absolute left-4 -top-8">
                                 <i className="ri-shuffle-line"></i>
                             </div>
