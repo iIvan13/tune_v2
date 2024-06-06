@@ -81,7 +81,7 @@ export default function Player() {
                             style={{
                                 backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, .8) 0%, rgba(20, 31, 42, 0.1) 50%, rgba(20, 31, 42, 0) 100%), url(${songBg})`,
                                 clipPath: "ellipse(110% 100% at 50% 0%)",
-                                height: "75%",
+                                height: "85%",
                             }}
                             className="bg-cover bg-center bg-no-repeat flex w-full justify-between items-start"
                         >
